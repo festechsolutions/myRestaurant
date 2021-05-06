@@ -103,6 +103,7 @@
     $(document).ready(function() {
       $('#userTable').DataTable({
         'order' : [],
+        'scrollX': true
         });
 
       $("#userMainNav").addClass('active');

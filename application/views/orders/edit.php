@@ -162,8 +162,8 @@
                     <label for="paid_status" class="col-sm-5 control-label">Paid Status</label>
                     <div class="col-sm-7">
                       <select type="text" class="form-control" id="paid_status" name="paid_status">
-                        <option value="2">UnPaid</option>
-                        <option value="1">paid</option>
+                        <option value="1" <?php if($order_data['order']['paid_status'] == 1) { echo 'selected="selected"'; } ?>>Paid</option>
+                        <option value="2" <?php if($order_data['order']['paid_status'] == 2) { echo 'selected="selected"'; } ?>>Unpaid</option>
                       </select>
                     </div>
                   </div>

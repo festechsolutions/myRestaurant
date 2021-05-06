@@ -119,7 +119,8 @@ $(document).ready(function() {
   // initialize the datatable 
   manageTable = $('#manageTable').DataTable({
     'ajax': base_url + 'orders/fetchOrdersData',
-    'order': []
+    'order': [],
+    'scrollX': true
   });
 
 });

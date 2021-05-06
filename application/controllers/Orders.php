@@ -54,8 +54,9 @@ class Orders extends Admin_Controller
 					echo $html;
 				}
 				else{
-        $count_total_item = array();
-				for($i=0;$i<$count_orders;$i++){
+        		$count_total_item = array();
+        		for($i=0;$i<$count_orders;$i++){
+					//echo json_encode($order_data);
 					foreach($order_data as $k => $v){
 						$count_total_item[$i][0] = $v['id'];
 						$count_total_item[$i][1] = $this->model_orders->countOrderItem($v['id']);
